@@ -1,0 +1,208 @@
+
+
+//! Section 2
+
+
+.section_2 {
+	background-color: rgb(68, 64, 64);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	padding-block: 100px;
+
+	div {
+		h1 {
+			color: white;
+			text-align: center;
+			font-weight: 700;
+			font-size: 45px;
+			letter-spacing: 10px;
+		}
+	}
+
+	.navigator {
+		width: 100%;
+		padding-block: 30px;
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		flex-wrap: wrap;
+
+		// .imgases {
+		// 	width: 550px;
+		// 	height: 300px;
+		// 	border-radius: 15px;
+		// }
+
+		.card {
+			background-color: rgba(0, 0, 0, 0.766);
+			backdrop-filter: blur(95px);
+			color: white;
+			backdrop-filter: blur(15px);
+			display: flex;
+			justify-content: space-between;
+			width: 550px;
+			height: 300px;
+			padding: 10px;
+			align-items: center;
+			border: 1px solid rgba(255, 255, 255, 0.202);
+			border-radius: 15px;
+			overflow: hidden;
+			transition: background 0.5s, box-shadow 0.5s;
+
+			.texts {
+				margin-top: 25px;
+				display: flex;
+				align-items: center;
+				gap: 15px;
+			}
+			.name {
+				font-size: 25px;
+				bottom: 28px;
+				transition: 0.3s ease-out;
+				cursor: pointer;
+				font-weight: 600;
+			}
+
+			.icon {
+				transition: 0.3s ease-out;
+			}
+
+			.des {
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				padding-top: 10px;
+				display: inline-block;
+				font-size: 18px;
+			}
+
+			.des {
+				display: inline-block;
+				animation: fade 2s infinite ease-in-out;
+			}
+		}
+	}
+
+	.card:hover {
+		box-shadow: 0px 0px 10px rgb(131, 116, 116), 0px 0px 15px rgb(128, 110, 110),
+			0px 0px 20px rgb(96, 75, 75), 0px 0px 40px rgb(200, 172, 172);
+	}
+
+	.card:hover svg {
+		transform: translateY(-5px);
+		transition: transform 0.3s ease-out;
+	}
+
+	// !!!!!!!!!!!!!!!!!!!!!!!! Media
+	@media (max-width: 1024px) {
+		.navigator {
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			.navigator .card {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		gap: 20px;
+		.navigator .card {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 480px) {
+		gap: 10px;
+	}
+
+	@media (max-width: 375px) {
+		gap: 10px;
+		.navigator .card {
+			width: 100%;
+			padding-top: 15px;
+			padding: 20px;
+
+			.name {
+				font-size: 20px;
+			}
+
+			.des {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.lox {
+	color: "#FFFFFF";
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	width: 100%;
+	padding: 10px 180px;
+	
+	.hiddens {
+		margin-top: 100px;
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 20px;
+		background: black;
+
+		h2 {
+			font-size: 30px;
+			text-align: center;
+		}
+
+		.p_text {
+			padding-block: 60px;
+			font-size: 18px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 100;
+			line-height: 1.6;
+		}
+
+		.box {
+			align-items: center;
+			span {
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				font-size: 15px;
+				color: dimgray;
+			}
+			.spans {
+				cursor: pointer;
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				font-size: 15px;
+				color: dimgray;
+				&:hover {
+					color: white;
+					transition: 0.5s;
+				}
+			}
+			span{
+				color: dimgray;
+			}
+		}
+		
+	}
+
+	
+}
+
+
+
+@media screen and (max-width: 900px) {
+	.lox {
+		margin-top: 25px;
+		padding: 50px;
+	}
+}
+
+
+

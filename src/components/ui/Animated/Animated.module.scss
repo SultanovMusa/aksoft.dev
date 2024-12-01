@@ -1,0 +1,27 @@
+.largeHeader {
+	// width: 100%;;
+	// background-size: cover;
+	// background-position: center center;
+	background-color: black;
+}
+
+.demoCanvas {
+	width: 100%;
+	// height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.mainTitle {
+		font-size: 1;
+	}
+}
+
+@media (max-width: 375px) {
+	.largeHeader{
+    height: 500px;
+  }
+
+  .demoCanvas{
+    height: 500px;
+  }
+}

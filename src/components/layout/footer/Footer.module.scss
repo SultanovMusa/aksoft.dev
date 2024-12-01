@@ -1,0 +1,140 @@
+.footer {
+	padding-block: 10px;
+	display: flex;
+	background-color: rgb(68, 64, 64);
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	color: white;
+
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+
+	a{
+		color: white;
+		letter-spacing: 3px;
+	}
+
+		.logo {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			align-items: center;
+
+			.logo_text {
+				// color: hsl(0, 0%, 28%);
+				color: white;
+				font-size: 40px;
+				font-weight: bold;
+				letter-spacing: 2px;
+	
+			}
+
+			@keyframes shine {
+				0% {
+					background-position: 0;
+				}
+				60% {
+					background-position: 600px;
+				}
+				100% {
+					background-position: 700px;
+				}
+			}
+			.contac {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+				gap: 15px;
+
+				p {
+					color: white;
+					font-family: "Roboto", sans-serif;
+					font-weight: 100;
+				}
+
+				.icon {
+					color: white;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+			}
+		}
+
+		.h2 {
+			color: white;
+			text-align: center;
+			font-size: 25px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 100;
+			letter-spacing: 1px;
+			align-items: center;
+		}
+
+		.h3 {
+			color: white;
+			text-align: center;
+			font-size: 16px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 100;
+			letter-spacing: 3px;
+			align-items: center;
+		}
+	}
+
+	// ! media
+	@media (max-width: 1024px) {
+		.content {
+			.logo {
+				align-items: center;
+
+				.contac {
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			.logo {
+				.contac {
+					.icon {
+						flex-direction: row;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 375px) {
+		.content {
+			.h2 {
+				font-size: 15px;
+			}
+			.h3 {
+				font-size: 13px;
+			}
+
+			.logo {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+				gap: 20px;
+				.contac {
+					.icon {
+						gap: 5px;
+						font-size: 14px;
+					}
+				}
+			}
+		
+		}
+	}
+}
